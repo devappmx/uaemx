@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registro de Usuarios</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="registro">
+	<div data-role="header">
+		<img src="imagenes/cabecera.png" style="max-width: 100%;" /> 
+	</div>
+	<div data-role="content">
+		<form action="conexion.php" method="post" data-ajax="false">
+        <center>
+			<label for="nombre">Nombre</label>
+            <input type="text" name="nombre" />
+            <label for="paterno">Apellido Paterno</label>
+            <input type="text" name="paterno" />
+            <label for="materno">Apellido Materno</label>
+            <input type="text" name="materno" />
+            <label for="cuenta">Numero de Cuenta</label>
+           	<input type="text" name="cuenta">
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass">
+            <label for="pass">Confirmar contraseña</label>
+            <input type="password" name="pass2"> 
+            <input type="submit" value="Registrarse">
+        </center>
+        </form>
+			
+	</div>
+	<footer data-role="footer" data-position="fixed" data-theme="d">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        
+                    </div>
+                <div class="ui-block-b">
+                    <a href="../index.html" data-role="button" data-icon="arrow-u" accesskey=""
+                        class="" data-inline="false">Inicio</a>
+                </div>
+                <div class="ui-block-c">
+                    <div id="social-icons" align="right">
+                        <a href="https://twitter.com/UAEM_MX"><img src="imagenes/twitter.png" width="35" height="35" alt="Twitter" /></a>
+                        <a href="https://www.facebook.com/UAEMex"><img src="imagenes/facebook.png" width="35" height="35" alt="Facebook" /></a>
+                    </div>
+                </div>
+                </div>
+            </footer>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</body>
+</html>
